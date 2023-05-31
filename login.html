@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="To buy flowers online meet our website" />
+    <meta name="keywords" content="flowers, flower, online flower shop" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&family=Raleway:wght@200&display=swap" rel="stylesheet" />
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous" />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous" />
+
+    <!-- Light Box -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" integrity="sha512-Velp0ebMKjcd9RiCoaHhLXkR1sFoCCWXNp6w4zj1hfMifYB5441C+sKeBl/T/Ka6NjBiRfBBQRaQq65ekYz3UQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Link To StyleSheet -->
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Bootstrap Theme</title>
+  </head>
+
+  <body data-spy="scroll" data-target="#main-nav" id="home-head-section">
+    <!-- NAVBAR -->
+    <nav class="navbar bg-dark navbar-dark navbar-expand-sm p-1">
+      <div class="container">
+        <a href="/index.html" class="navbar-brand">Blogin</a>
+      </div>
+    </nav>
+    <!-- Header -->
+    <header id="main-header" class="bg-primary text-white">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h1><i class="fas fa-user"></i> Blogen Admin</h1>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Search -->
+    <section id="search" class="py-4 mb-4 bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3"><h4 class="display-5">Are You A New User?</h4></div>
+          <div class="col-md-3">
+            <a href="#" class="btn btn-primary btn-block">Sign Up</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- login -->
+    <section id="login">
+      <div class="container">
+        <div class="row mb-4">
+          <div class="col-md-6 mx-auto">
+            <div class="card">
+              <div class="card-header">
+                <h4>Account Login</h4>
+              </div>
+              <div class="card-body">
+                <form action="/index.html">
+                  <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" class="form-control" />
+                  </div>
+                  <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password" class="form-control" />
+                  </div>
+                  <input type="button" value="Login" class="btn btn-block btn-primary" />
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer id="main-footer" class="bg-dark text-white py-4 text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <p class="lead">Copyright &copy; <span id="year"></span> all right reserved</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/37810a386b.js" crossorigin="anonymous"></script>
+
+    <!-- JQuary -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+
+    <!-- CKEditor 5 -->
+    <script src="https://cdn.ckeditor.com/4.19.1/standard/ckeditor.js"></script>
+    <!-- get the current year -->
+    <script>
+      $("#year").text(new Date().getFullYear());
+      // CKEditor
+      CKEDITOR.replace("editor1");
+    </script>
+  </body>
+</html>
